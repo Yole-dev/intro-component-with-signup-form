@@ -35,11 +35,18 @@ header p {
     display: none;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 main > div {
     background: white;
     border-radius: 10px;
     box-shadow: 0 5px 3px hsla(249, 10%, 26%, 0.404);
-    width: 280px;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
