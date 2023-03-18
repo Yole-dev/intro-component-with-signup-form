@@ -83,6 +83,10 @@ main form > div input {
     width: 100%;
 }
 
+.input-control input:focus {
+    outline: 0;
+}
+
 main form div p {
     color: red;
     font-size: 11px;
