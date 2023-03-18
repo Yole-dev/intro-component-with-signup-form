@@ -45,25 +45,35 @@ const validateInputs = function() {
     if(firstNameValue == '') {
         firstName.style.borderColor = 'hsl(0, 100%, 74%)';
         firstNameError.innerHTML = `First Name cannot be empty`;
+    } else{
+        firstName.style.borderColor = 'hsl(154, 59%, 51%)';
     }
 
     if(lastNameValue == '') {
         lastName.style.borderColor = 'hsl(0, 100%, 74%)';
         lastNameError.innerHTML = `Last Name cannot be empty`;
+    } else{
+        lastName.style.borderColor = 'hsl(154, 59%, 51%)';
     }
 
     if(emailValue == '') {
         emailAddress.style.borderColor = 'hsl(0, 100%, 74%)';
         emailAddressError.innerHTML = `Looks like this is not an email`;
     } else if(!isEmailValid(emailValue)) {
+        emailAddress.style.borderColor = 'hsl(0, 100%, 74%)';
         emailAddressError.innerHTML = `Looks like this is not an email`;
+    } else{
+        emailAddress.style.borderColor = 'hsl(154, 59%, 51%)';
     }
 
     if(passwordValue == '') {
         password.style.borderColor = 'hsl(0, 100%, 74%)';
         passwordError.innerHTML = `Password cannot be empty`;
     } else if(passwordValue.length < 8) {
+        password.style.borderColor = 'hsl(0, 100%, 74%)';
         passwordError.innerHTML = `Password must be at least 8 characters long.`;
+    } else{
+        password.style.borderColor = 'hsl(154, 59%, 51%)';
     }
 };
 
