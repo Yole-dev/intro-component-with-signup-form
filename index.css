@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Poppins', sans-serif;
     background-color: hsl(0, 100%, 74%) ;
 }
 
@@ -39,7 +41,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 main > div {
@@ -52,6 +53,7 @@ main > div {
     justify-content: center;
     padding: 1rem;
     gap: 1rem;
+    align-self: center;
 }
 
 main > div > div {
