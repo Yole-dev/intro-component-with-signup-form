@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: hsl(0, 100%, 74%) ;
+}
+
+body > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 1rem 0 1rem;
+    background: url(images/bg-intro-desktop.png);
+}
+
+header h2 {
+    color: white;
+    text-align: center;
+}
+
+header p {
+    text-align: center;
+    font-weight: 200;
+    color: white ;
+    margin: 1rem 0 2.5rem 0;
+}
+
+.text {
+    display: none;
+}
+
+main > div {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 3px hsla(249, 10%, 26%, 0.404);
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+main > div > div {
+    width: 100%;
+}
+
+main button { 
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 1rem 0 1rem 0;
+    color: white;
+    background: hsl(248, 32%, 49%);
+    box-shadow: 0 5px 3px hsla(249, 10%, 26%, 0.404);
+    margin-bottom: 1.5rem;
+}
+
+.desBtn {
+    display: none;
+}
+
+main div > div input {
+    padding: 0.7rem 0 0.7rem 0.3rem;
+    border-radius: 4px;
+    border: 1px solid hsl(246, 25%, 77%);
+    font-weight: bold;
+    width: 100%;
+}
+
+main div div p {
+    color: red;
+    font-size: 11px;
+    font-weight: 200;
+    font-style: italic;
+    text-align: right;
+    margin-top: 0.5rem;
+}
+
+main div button:last-of-type {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.7rem 0 0.7rem 0.3rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: hsl(154, 59%, 51%);
+    box-shadow: 0 2px 1px hsla(249, 10%, 26%, 0.404);
+}
+
+main div p {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 12px;
+    color: hsl(246, 25%, 77%);
+}
+
+main div p a {
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+}
+
+footer {
+    justify-self: end;
+    margin-top: 3rem;
+}
+
+.attribution {
+    font-size: 14px;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(248, 32%, 49%);
+}
+
+@media screen and (min-width: 800px) {
+   body > div > div {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+   }
+
+   header h2 {
+    font-size: 33px;
+    text-align: left;
+    }
+
+    header p {
+        display: none;
+    }
+
+    .text {
+        text-align: left;
+        display: block;
+    }
+
+    main div {
+        width: 400px;
+    }
+
+    main > button {
+        display: none;
+    }
+
+    .desBtn {
+        display: block;
+    }
+
+}
