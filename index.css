@@ -18,7 +18,7 @@ body > div {
     align-items: center;
     height: 100vh;
     padding: 0 1rem 0 1rem;
-    background: url(images/bg-intro-desktop.png);
+    background: url(images/bg-intro-mobile.png);
 }
 
 header h2 {
@@ -139,6 +139,10 @@ footer {
     align-items: center;
     gap: 6rem;
    }
+
+   body > div {
+    background: url(images/bg-intro-desktop.png);
+}
 
    header h2 {
     font-size: 33px;
